@@ -26,7 +26,7 @@ def search(date):
         for val in entry_elements:
             paper_info = {
                 'url': val['id'],
-                'title': val['title'],
+                'title': ' '.join(val['title'].split('\n')),
                 'abstract': ' '.join(val['summary'].split('\n')),
                 'date': val['published'].split('T')[0],
                 'authors': [author['name'] for author in val['authors']],
