@@ -1,0 +1,9 @@
+name: tweet
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy=1.19.2
+  - feedparser=6.0.1
+  - wordcloud=1.8.0
+  - ipython=7.18.1
